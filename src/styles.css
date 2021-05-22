@@ -1,0 +1,124 @@
+a {
+  text-decoration: none; }
+
+body {
+  background-color: #F2F2F2; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px 0 24px;
+  height: 76px;
+  background-color: #ffffff;
+  margin-bottom: 1px; }
+  header .logo {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px; }
+  header .right_part {
+    display: flex; }
+  header ul {
+    display: flex;
+    margin-right: 56px; }
+    header ul li {
+      list-style: none;
+      margin-right: 24px; }
+    header ul li:last-child {
+      margin-right: 0; }
+    header ul a {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      color: rgba(17, 17, 17, 0.48);
+      position: relative; }
+    header ul a:hover {
+      color: #111; }
+    header ul a:hover:after {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: #6E41E2;
+      bottom: -27px; }
+  header .user_profile {
+    display: flex;
+    align-items: center; }
+    header .user_profile .user_name a {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #6e41e2;
+      margin-right: 12px; }
+    header .user_profile .user_picture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      background-color: #F1F1F1;
+      border-radius: 50%; }
+
+main {
+  background-color: #ffffff;
+  padding: 40px 51px 77px 51px; }
+  main .title h1 {
+    height: 48px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000;
+    margin: 0; }
+  main .title p {
+    height: 48px;
+    max-width: 724px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin: 12px 0 0 0; }
+  main .search-form {
+    margin: 32px 0 32px 0; }
+    main .search-form input {
+      height: 56px;
+      max-width: 985px;
+      width: 100%;
+      background: #FFFFFF url(./assets/images/search.svg) no-repeat 16px 50%;
+      border: none;
+      box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+      border-radius: 4px;
+      margin-right: 20px; }
+    main .search-form input::placeholder {
+      padding-left: 44px;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(17, 17, 17, 0.48); }
+    main .search-form select {
+      width: 259px;
+      height: 56px;
+      box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+      border-radius: 4px;
+      border: none; }
+  main .course-table {
+    width: 400px;
+    height: 347px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+    border-radius: 8px; }
+    main .course-table .background-img {
+      border-radius: 8px 8px 0 0; }
