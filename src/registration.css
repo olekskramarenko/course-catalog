@@ -5,8 +5,8 @@ body {
   padding-top: 71px; }
 
 .reg-layout {
-  width: 410px;
-  height: 564px;
+  width: 474px;
+  height: 628px;
   top: 71px;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
@@ -24,7 +24,8 @@ body {
   .reg-layout .menu {
     display: flex;
     padding: 0 0 15px 0;
-    border-bottom: solid 1px #F1F1F1; }
+    border-bottom: solid 1px #F1F1F1;
+    margin: 0; }
     .reg-layout .menu li {
       list-style: none;
       margin-right: 24px;
@@ -51,3 +52,111 @@ body {
       background-color: #6e41e2;
       position: absolute;
       top: 37px; }
+  .reg-layout .social-sign {
+    height: 60px;
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .reg-layout .social-sign p {
+      margin: 0 32px 0 32px;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      color: #000000; }
+    .reg-layout .social-sign .social-icons {
+      margin-right: 32px;
+      display: flex; }
+      .reg-layout .social-sign .social-icons .vk-icon {
+        width: 36px;
+        height: 36px;
+        background: url(./assets/reg-images/Vector-vk-icon.svg) #FFFFFF no-repeat 50% 50%;
+        border-radius: 50%;
+        margin-right: 8px; }
+      .reg-layout .social-sign .social-icons .fb-icon {
+        width: 36px;
+        height: 36px;
+        background: url(./assets/reg-images/Vector-fb-icon.svg) #FFFFFF no-repeat 50% 50%;
+        border-radius: 50%;
+        margin-right: 8px; }
+      .reg-layout .social-sign .social-icons .g-icon {
+        width: 36px;
+        height: 36px;
+        background: url(./assets/reg-images/google-g-icon.svg) #FFFFFF no-repeat 50% 50%;
+        border-radius: 50%; }
+  .reg-layout .reg-form {
+    margin: 24px 32px 0 32px; }
+    .reg-layout .reg-form .input-name {
+      width: 410px;
+      height: 56px;
+      box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+      border-radius: 4px;
+      border: none;
+      margin-bottom: 20px; }
+    .reg-layout .reg-form .input-email {
+      width: 410px;
+      height: 56px;
+      box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+      border-radius: 4px;
+      border: none;
+      margin-bottom: 20px; }
+    .reg-layout .reg-form .input-phone {
+      width: 410px;
+      height: 56px;
+      box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+      border-radius: 4px;
+      border: none;
+      margin-bottom: 20px; }
+    .reg-layout .reg-form .input::placeholder {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(17, 17, 17, 0.48);
+      padding-left: 16px; }
+    .reg-layout .reg-form .privacy-policy {
+      display: flex;
+      align-items: center; }
+      .reg-layout .reg-form .privacy-policy .checkbox-privacy {
+        width: 24px;
+        height: 24px;
+        border: #D4D4D4 1px solid;
+        box-sizing: border-box;
+        border-radius: 4px; }
+      .reg-layout .reg-form .privacy-policy p {
+        margin-left: 12px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #000000; }
+    .reg-layout .reg-form .submit-reg {
+      width: 410px;
+      height: 44px;
+      background: #6E41E2;
+      border-radius: 4px;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+      border: none; }
+    .reg-layout .reg-form .submit-sign-in {
+      width: 410px;
+      height: 44px;
+      background: #fff;
+      border-radius: 4px;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #6E41E2;
+      border: none;
+      margin-top: 8px; }
