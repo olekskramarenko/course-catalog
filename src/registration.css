@@ -29,20 +29,22 @@ body {
     .reg-layout .menu li {
       list-style: none;
       margin-right: 24px;
-      font-family: "Roboto", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 24px;
       display: flex;
       align-items: flex-end;
-      color: #6B6B6B;
       position: relative; }
+      .reg-layout .menu li a {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #6B6B6B;
+        text-decoration: none; }
     .reg-layout .menu li:last-child {
       margin-right: 0; }
     .reg-layout .menu li:first-child {
       margin-left: 32px; }
-    .reg-layout .menu li:hover {
+    .reg-layout .menu li:hover a {
       color: #111;
       cursor: pointer; }
     .reg-layout .menu li:hover::after {
@@ -76,18 +78,21 @@ body {
         height: 36px;
         background: url(./assets/reg-images/Vector-vk-icon.svg) #FFFFFF no-repeat 50% 50%;
         border-radius: 50%;
-        margin-right: 8px; }
+        margin-right: 8px;
+        cursor: pointer; }
       .reg-layout .social-sign .social-icons .fb-icon {
         width: 36px;
         height: 36px;
         background: url(./assets/reg-images/Vector-fb-icon.svg) #FFFFFF no-repeat 50% 50%;
         border-radius: 50%;
-        margin-right: 8px; }
+        margin-right: 8px;
+        cursor: pointer; }
       .reg-layout .social-sign .social-icons .g-icon {
         width: 36px;
         height: 36px;
         background: url(./assets/reg-images/google-g-icon.svg) #FFFFFF no-repeat 50% 50%;
-        border-radius: 50%; }
+        border-radius: 50%;
+        cursor: pointer; }
   .reg-layout .reg-form {
     margin: 24px 32px 0 32px; }
     .reg-layout .reg-form .input-name {
@@ -111,6 +116,8 @@ body {
       border-radius: 4px;
       border: none;
       margin-bottom: 20px; }
+    .reg-layout .reg-form .input:focus-visible {
+      outline: none; }
     .reg-layout .reg-form .input::placeholder {
       font-family: "Roboto", sans-serif;
       font-style: normal;
@@ -129,12 +136,15 @@ body {
         box-sizing: border-box;
         border-radius: 4px; }
       .reg-layout .reg-form .privacy-policy p {
-        margin-left: 12px;
+        margin: 0 0 0 12px;
         font-family: "Roboto", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         color: #000000; }
+        .reg-layout .reg-form .privacy-policy p a {
+          text-decoration: none;
+          color: #6E41E2; }
     .reg-layout .reg-form .submit-reg {
       width: 410px;
       height: 44px;
@@ -146,7 +156,22 @@ body {
       font-size: 16px;
       line-height: 24px;
       color: #FFFFFF;
-      border: none; }
+      border: none;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px; }
+    .reg-layout .reg-form .submit-reg:hover {
+      cursor: pointer; }
+    .reg-layout .reg-form .submit-reg:hover::before {
+      content: "";
+      display: flex;
+      background: url(./assets/reg-images/arrow-left.svg);
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+      margin-right: 8px; }
     .reg-layout .reg-form .submit-sign-in {
       width: 410px;
       height: 44px;
@@ -159,4 +184,18 @@ body {
       line-height: 24px;
       color: #6E41E2;
       border: none;
-      margin-top: 8px; }
+      margin-top: 8px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .reg-layout .reg-form .submit-sign-in:hover {
+      cursor: pointer; }
+    .reg-layout .reg-form .submit-sign-in:hover::before {
+      content: "";
+      display: block;
+      background: url(./assets/reg-images/arrow-leftcolor.svg);
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+      margin-right: 8px; }

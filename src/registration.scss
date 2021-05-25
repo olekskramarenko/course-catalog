@@ -35,15 +35,18 @@ body {
         li {
             list-style: none;
             margin-right: 24px;
-            font-family: $roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 24px;
             display: flex;
             align-items: flex-end;
-            color: #6B6B6B;
             position: relative;
+            a {
+                font-family: $roboto;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #6B6B6B;
+                text-decoration: none;
+            }
         }
         li:last-child {
             margin-right: 0;
@@ -51,7 +54,7 @@ body {
         li:first-child {
             margin-left: 32px;
         }
-        li:hover {
+        li:hover a {
             color: #111;
             cursor: pointer;
         }
@@ -90,6 +93,7 @@ body {
                 background: url(./assets/reg-images/Vector-vk-icon.svg) #FFFFFF no-repeat 50% 50%;
                 border-radius: 50%;
                 margin-right: 8px;
+                cursor: pointer;
             }
             .fb-icon {
                 width: 36px;
@@ -97,12 +101,14 @@ body {
                 background: url(./assets/reg-images/Vector-fb-icon.svg) #FFFFFF no-repeat 50% 50%;
                 border-radius: 50%;
                 margin-right: 8px;
+                cursor: pointer;
             }
             .g-icon {
                 width: 36px;
                 height: 36px;
                 background: url(./assets/reg-images/google-g-icon.svg) #FFFFFF no-repeat 50% 50%;
                 border-radius: 50%;
+                cursor: pointer;
             }
         }
     }
@@ -133,6 +139,9 @@ body {
             border: none;
             margin-bottom: 20px;
         }
+        .input:focus-visible {
+            outline: none;
+        }
         .input::placeholder {
             font-family: $roboto;
             font-style: normal;
@@ -153,12 +162,16 @@ body {
                 border-radius: 4px;
             }
             p {
-                margin-left: 12px;
+                margin: 0 0 0 12px;
                 font-family: $roboto;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 16px;
                 color: #000000;
+                a {
+                    text-decoration: none;
+                    color: #6E41E2;
+                }
             }
         }
         .submit-reg {
@@ -173,6 +186,23 @@ body {
             line-height: 24px;
             color: #FFFFFF;
             border: none;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .submit-reg:hover{
+            cursor: pointer;
+        }
+        .submit-reg:hover::before {
+            content: "";
+            display: flex;
+            background: url(./assets/reg-images/arrow-left.svg);
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
         }
         .submit-sign-in {
             width: 410px;
@@ -187,6 +217,22 @@ body {
             color: #6E41E2;
             border: none;
             margin-top: 8px; 
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .submit-sign-in:hover{
+            cursor: pointer;
+        }
+        .submit-sign-in:hover::before {
+            content: "";
+            display: block;
+            background: url(./assets/reg-images/arrow-leftcolor.svg);
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
         }
     }
 }
