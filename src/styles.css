@@ -191,7 +191,8 @@ main {
   main .courses {
     display: flex; }
   main .course-table {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: 347px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
@@ -241,6 +242,8 @@ main {
         line-height: 24px;
         color: #FFFFFF;
         margin-left: 12px; }
+    main .course-table .title-wrapper {
+      height: 93px; }
     main .course-table .title {
       font-family: "Montserrat", sans-serif;
       font-style: normal;
@@ -362,3 +365,54 @@ main {
         width: 16px;
         height: 16px;
         margin-right: 8px; }
+
+@media (max-width: 1366px) {
+  .courses {
+    flex-wrap: wrap; }
+    .courses .course-table {
+      margin-bottom: 20px; } }
+
+@media (max-width: 600px) {
+  header {
+    padding: 0 10px 0 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 128px; }
+    header .right_part {
+      max-width: 540px;
+      width: 100%;
+      justify-content: space-between; }
+      header .right_part .user_profile {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        width: fit-content; }
+    header ul {
+      padding: 0;
+      margin-right: 20px; }
+      header ul li {
+        margin-right: 10px; }
+  main {
+    padding: 40px 21px 40px 21px; }
+    main .search-form {
+      flex-wrap: wrap; }
+      main .search-form input {
+        margin-bottom: 20px;
+        margin-right: 0; }
+    main .course-table {
+      height: auto;
+      margin-right: 0; }
+      main .course-table .description-line {
+        flex-wrap: wrap; }
+      main .course-table .layout-background-img {
+        width: 100%; }
+      main .course-table .layout-background-img::after {
+        width: 100%; }
+      main .course-table .buttons {
+        margin-bottom: 20px; }
+    main .background-img {
+      width: 100%;
+      height: 134px; }
+    main .title h1 {
+      height: auto; }
+    main .title p {
+      height: auto; } }
